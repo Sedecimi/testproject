@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="javaee">
+    <CLASSES>
+      <root url="jar://C:/Program Files/Java/jdk1.8.0_101/lib/javaee.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <excluded>
+      <root url="jar://C:/Program Files/Java/jdk1.8.0_101/lib/javaee.jar!/" />
+    </excluded>
+  </library>
+</component>

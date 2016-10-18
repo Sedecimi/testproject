@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="HSQLDB (Local) - jdbc:hsqldb:hsql://localhost/testdb" uuid="3a436cac-3fe5-4af9-821e-815dd0864081">
+    <database-info product="HSQL Database Engine" version="2.3.4" jdbc-version="4.0" driver-name="HSQL Database Engine Driver" driver-version="2.3.4">
+      <identifier-quote-string>&quot;</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="upper" quoted-identifiers="exact"/>
+    <database-model serializer="dbm" rdbms="HSQLDB" format-version="2.6">
+      <database id="1" name="PUBLIC">
+        <visible>1</visible>
+      </database>
+      <schema id="2" parent="1" name="PUBLIC">
+        <visible>1</visible>
+      </schema>
+      <schema id="3" parent="1" name="INFORMATION_SCHEMA"/>
+      <schema id="4" parent="1" name="SYSTEM_LOBS"/>
+      <table id="5" parent="2" name="GRUNTS"/>
+      <table id="6" parent="2" name="STUDENTS"/>
+      <column id="7" parent="5" name="ID">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(32)|4</data-type>
+      </column>
+      <column id="8" parent="5" name="CASH">
+        <data-type>INTEGER(32)|4</data-type>
+      </column>
+      <column id="9" parent="5" name="DESCRIPTION">
+        <data-type>VARCHAR(200)|12</data-type>
+      </column>
+      <key id="10" parent="5" name="SYS_PK_10351">
+        <name-surrogate>1</name-surrogate>
+        <columns>ID</columns>
+        <primary>1</primary>
+      </key>
+      <column id="11" parent="6" name="ID">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(32)|4</data-type>
+      </column>
+      <column id="12" parent="6" name="NAME">
+        <mandatory>1</mandatory>
+        <data-type>VARCHAR(100)|12</data-type>
+      </column>
+      <column id="13" parent="6" name="EMAIL">
+        <data-type>VARCHAR(100)|12</data-type>
+      </column>
+      <column id="14" parent="6" name="GRUNT_ID">
+        <data-type>INTEGER(32)|4</data-type>
+      </column>
+      <key id="15" parent="6" name="SYS_PK_10362">
+        <name-surrogate>1</name-surrogate>
+        <columns>ID</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="16" parent="6" name="SYS_FK_10363">
+        <name-surrogate>1</name-surrogate>
+        <columns>GRUNT_ID</columns>
+        <ref-key>~.GRUNTS.SYS_PK_10351</ref-key>
+        <cascade-update-rule>no_action</cascade-update-rule>
+        <cascade-delete-rule>no_action</cascade-delete-rule>
+      </foreign-key>
+    </database-model>
+  </data-source>
+</component>
